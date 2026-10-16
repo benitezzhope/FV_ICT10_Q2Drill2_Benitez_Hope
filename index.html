@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script><title>Drill #2</title>
+    <style>
+
+/* CSS Design */
+    body{ 
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  background: url("https://i.pinimg.com/1200x/98/62/0c/98620c451f949d63e206864470f2cae3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+     #firstbox{
+
+        background-color: rgb(255, 234, 239);
+        width: 600px;
+        height: 730px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        border-radius: 15px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+     }
+
+    input{
+        width: 400px;
+        height: 50px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        text-align: left;
+        padding-left: 20px;
+        box-sizing: border-box;
+        color: rgb(177, 111, 129);
+        font-size: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+
+    }
+
+    button{
+        width: 150px;
+        height: 50px;
+        color: rgb(255, 255, 255);;
+        border: none;
+        font-size: 20px;
+        background-color:rgb(177, 111, 129);;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    </style>
+</head>
+<body>
+
+    <div id="firstbox">
+    <p style="color: rgb(177, 111, 129); text-align: center; padding-top: 40px;"><i>Join the <b>CommArts Club</b> Now!</i></p>
+    <h1 style="color: rgb(177, 111, 129); text-align: center">Add New Club Member</h1>
+    
+    <br>
+   
+    <!--Input Fields-->
+    
+    <input type="text" id="firstname" name="firstname" placeholder="Enter first name...">
+    <br><br>
+    <input type="text" id="lastname" name="lastname" placeholder="Enter last name...">
+    <br><br>
+    <button type="button" py-click="check"><b>Add Name</b></button>
+
+    <br><br>
+      <p id="result" style="color: rgb(177, 111, 129); font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: left; margin-left: 60px;"></p>
+    
+    <script type="py" src="main.py"></script>
+  
+    </div>
+</body>
+</html>
